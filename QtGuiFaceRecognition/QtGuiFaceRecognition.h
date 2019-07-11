@@ -9,7 +9,8 @@ class QtGuiFaceRecognition : public QMainWindow
 
 public:
 	QtGuiFaceRecognition(QWidget *parent = Q_NULLPTR);
-
+private slots:
+	void on_pushButton_1_clicked();//信息录入槽函数
 private:
 	Ui::QtGuiFaceRecognitionClass ui;
 };
