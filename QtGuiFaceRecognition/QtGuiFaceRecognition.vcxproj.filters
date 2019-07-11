@@ -36,14 +36,23 @@
     <ClCompile Include="QtGuiFaceRecognition.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="InfoInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtGuiFaceRecognition.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="InfoInput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="QtGuiFaceRecognition.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="InfoInput.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

@@ -113,6 +113,7 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="InfoInput.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="QtGuiFaceRecognition.cpp" />
   </ItemGroup>
@@ -120,10 +121,17 @@
     <QtMoc Include="QtGuiFaceRecognition.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="InfoInput.ui" />
     <QtUic Include="QtGuiFaceRecognition.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="QtGuiFaceRecognition.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="InfoInput.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtQuick;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtUiTools;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtQuick;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtUiTools;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
