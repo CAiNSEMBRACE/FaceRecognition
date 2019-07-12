@@ -122,14 +122,3 @@ void InfoInput::on_Button_input_clicked()
 	file.close();
 
 }
-
-
-
-//void InfoInput::timerEvent(QTimerEvent* event)
-//{
-//	cv::Mat image;
-//	mCapture >> image;
-//
-//	// Show the image
-//	ui.openCVviewer->showImage(image);
-//}
