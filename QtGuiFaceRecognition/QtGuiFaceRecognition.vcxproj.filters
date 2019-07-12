@@ -42,7 +42,19 @@
     <ClCompile Include="Ima_Col.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cqtopencvviewergl.cpp">
+    <ClCompile Include="CheckOnWork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LearningTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fac_Rec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mol_Tra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,7 +65,10 @@
     <QtMoc Include="InfoInput.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="cqtopencvviewergl.h">
+    <QtMoc Include="CheckOnWork.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="LearningTable.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -62,6 +77,12 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="InfoInput.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CheckOnWork.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="LearningTable.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -81,6 +102,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="opencv_head.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="get.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fac_Rec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mol_Tra.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

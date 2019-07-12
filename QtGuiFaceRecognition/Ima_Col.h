@@ -1,23 +1,19 @@
 #pragma once
-#ifndef ima_col
-#define ima_col
-
 #include "opencv_head.h"
-#include <iostream>
-#include <vector>
-#include <stdio.h>
 
-using namespace std;
+#define INPUT 10
+#define TEST 0
 
 class Ima_Col
 {
+private:
+	VideoCapture capture;
+	CascadeClassifier cascada;
 public:
+	Mat cap;
 	Ima_Col();
-	int show();
-
-
-
+	//int show(Mat cap);
+	Mat ima_col(int flag);
+	int sav_tra(Mat face, int index);
+	void sav_csv(int lable = 0);
 };
-
-#endif
-

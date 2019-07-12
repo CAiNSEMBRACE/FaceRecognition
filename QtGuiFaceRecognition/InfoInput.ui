@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>880</width>
-    <height>499</height>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -123,22 +123,5 @@
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>Button_input</sender>
-   <signal>clicked()</signal>
-   <receiver>InfoInput</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>553</x>
-     <y>462</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>306</x>
-     <y>298</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

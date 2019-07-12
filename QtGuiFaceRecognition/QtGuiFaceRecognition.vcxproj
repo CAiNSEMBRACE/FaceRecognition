@@ -116,17 +116,23 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cqtopencvviewergl.cpp" />
+    <ClCompile Include="CheckOnWork.cpp" />
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="Fac_Rec.cpp" />
     <ClCompile Include="Ima_Col.cpp" />
     <ClCompile Include="InfoInput.cpp" />
+    <ClCompile Include="LearningTable.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mol_Tra.cpp" />
     <ClCompile Include="QtGuiFaceRecognition.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtGuiFaceRecognition.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="CheckOnWork.ui" />
     <QtUic Include="InfoInput.ui" />
+    <QtUic Include="LearningTable.ui" />
     <QtUic Include="QtGuiFaceRecognition.ui" />
   </ItemGroup>
   <ItemGroup>
@@ -142,12 +148,20 @@
     <Text Include="TestList.txt" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="cqtopencvviewergl.h">
+    <QtMoc Include="CheckOnWork.h">
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtQuick;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtUiTools;$(QTDIR)\include\QtWidgets</IncludePath>
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtQuick;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtUiTools;$(QTDIR)\include\QtWidgets</IncludePath>
     </QtMoc>
+    <ClInclude Include="database.h" />
+    <ClInclude Include="Fac_Rec.h" />
+    <ClInclude Include="get.h" />
     <ClInclude Include="Ima_Col.h" />
+    <QtMoc Include="LearningTable.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtQuick;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtUiTools;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtQuick;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtUiTools;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
     <ClInclude Include="main.h" />
+    <ClInclude Include="Mol_Tra.h" />
     <ClInclude Include="opencv_head.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
