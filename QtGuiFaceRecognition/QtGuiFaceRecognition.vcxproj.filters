@@ -39,12 +39,21 @@
     <ClCompile Include="InfoInput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Ima_Col.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cqtopencvviewergl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtGuiFaceRecognition.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="InfoInput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="cqtopencvviewergl.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -66,6 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ima_Col.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opencv_head.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

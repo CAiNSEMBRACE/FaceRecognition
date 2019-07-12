@@ -28,33 +28,41 @@ public:
     QLineEdit *Edit_name;
     QLineEdit *Edit_id;
     QLineEdit *Edit_class;
+    QPushButton *Button_cam;
+    QLabel *labelCam;
 
     void setupUi(QWidget *InfoInput)
     {
         if (InfoInput->objectName().isEmpty())
             InfoInput->setObjectName(QStringLiteral("InfoInput"));
-        InfoInput->resize(617, 502);
+        InfoInput->resize(880, 499);
         label = new QLabel(InfoInput);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(50, 40, 54, 12));
+        label->setGeometry(QRect(630, 20, 54, 12));
         label_2 = new QLabel(InfoInput);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(50, 120, 54, 12));
+        label_2->setGeometry(QRect(630, 100, 54, 12));
         label_3 = new QLabel(InfoInput);
         label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(50, 190, 54, 12));
+        label_3->setGeometry(QRect(630, 180, 54, 12));
         Button_input = new QPushButton(InfoInput);
         Button_input->setObjectName(QStringLiteral("Button_input"));
-        Button_input->setGeometry(QRect(510, 450, 75, 23));
+        Button_input->setGeometry(QRect(780, 430, 75, 23));
         Edit_name = new QLineEdit(InfoInput);
         Edit_name->setObjectName(QStringLiteral("Edit_name"));
-        Edit_name->setGeometry(QRect(50, 60, 271, 31));
+        Edit_name->setGeometry(QRect(630, 50, 211, 31));
         Edit_id = new QLineEdit(InfoInput);
         Edit_id->setObjectName(QStringLiteral("Edit_id"));
-        Edit_id->setGeometry(QRect(50, 140, 271, 31));
+        Edit_id->setGeometry(QRect(630, 130, 211, 31));
         Edit_class = new QLineEdit(InfoInput);
         Edit_class->setObjectName(QStringLiteral("Edit_class"));
-        Edit_class->setGeometry(QRect(50, 210, 271, 31));
+        Edit_class->setGeometry(QRect(630, 210, 211, 31));
+        Button_cam = new QPushButton(InfoInput);
+        Button_cam->setObjectName(QStringLiteral("Button_cam"));
+        Button_cam->setGeometry(QRect(640, 430, 75, 23));
+        labelCam = new QLabel(InfoInput);
+        labelCam->setObjectName(QStringLiteral("labelCam"));
+        labelCam->setGeometry(QRect(0, 0, 621, 451));
 
         retranslateUi(InfoInput);
         QObject::connect(Button_input, SIGNAL(clicked()), InfoInput, SLOT(close()));
@@ -69,6 +77,8 @@ public:
         label_2->setText(QApplication::translate("InfoInput", "\345\255\246\345\217\267", nullptr));
         label_3->setText(QApplication::translate("InfoInput", "\347\217\255\347\272\247", nullptr));
         Button_input->setText(QApplication::translate("InfoInput", "\346\217\220\344\272\244", nullptr));
+        Button_cam->setText(QApplication::translate("InfoInput", "\350\211\262\347\233\270\345\244\264", nullptr));
+        labelCam->setText(QString());
     } // retranslateUi
 
 };
