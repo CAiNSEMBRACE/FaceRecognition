@@ -14,6 +14,8 @@
 #include <QGraphicsScene>
 #include <opencv2/highgui/highgui.hpp>
 
+#include "database.h"
+
 class InfoInput : public QWidget
 {
 	Q_OBJECT
@@ -43,16 +45,9 @@ private:
 	QImage* image;
 
 	QTimer* timer;
+	
+	DataBase_s db;
 
-	bool flag = false;
-
-	//QTimer 计时用；
-
-	//IplImage* pFrame;
-	////申请IplImage类型指针，就是申请内存空间来存放每一帧图像
-
-	//CvCapture* cam;
-	//// 视频获取结构， 用来作为视频获取函数的一个参数
 };
 
 #endif // INFO

@@ -4,6 +4,11 @@ InfoInput::InfoInput(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
+
+	//数据库初始化
+	db.createConnection();
+	db.createTable();
+
 	timer = new QTimer(this);
 	//初始化timer
 
@@ -107,29 +112,5 @@ void InfoInput::readFarme()
 
 void InfoInput::on_Button_input_clicked()
 {
-
-	QFile file("TestList.txt");
-	//不存在创建，存在则打开
-	file.open(QIODevice::ReadWrite | QIODevice::Text);
-	//写入内容，注意需要转码，否则会报错
-	QString tmp = _id + " " + _name + " " + _class;
-	QByteArray str = tmp.toUtf8();
-	//写入QByteArray格式字符串
-	file.write(str);
-
-	/*QDataStream stream(&file);
-	stream << _id << " " << _name << " " << _class;*/
-	file.close();
-
+	db.insert(_id.toInt(), _name, _class.toInt(), 0);
 }
-
-
-
-//void InfoInput::timerEvent(QTimerEvent* event)
-//{
-//	cv::Mat image;
-//	mCapture >> image;
-//
-//	// Show the image
-//	ui.openCVviewer->showImage(image);
-//}
