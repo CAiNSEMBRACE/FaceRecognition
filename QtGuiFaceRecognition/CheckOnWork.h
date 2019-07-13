@@ -11,7 +11,6 @@
 #include <qfile.h>
 #include "Ima_Col.h"
 #include <QGraphicsScene>
-#include <opencv2/highgui/highgui.hpp>
 
 class CheckOnWork : public QWidget
 {
